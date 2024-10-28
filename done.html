@@ -133,9 +133,7 @@
                 ext: 'jpg'
             });
         osm.addTo(map);
-        const mapElement = document.getElementById('map');
-        let tmp = document.querySelector("#map > div.leaflet-control-container > div.leaflet-bottom.leaflet-right")
-        tmp.remove()
+        const mapElement = document.getElementById('map')
         let isSeen = false
         let elementsFunction = Array.from(document.getElementsByClassName("btn-f"))
         function disableOtherButton(index)
